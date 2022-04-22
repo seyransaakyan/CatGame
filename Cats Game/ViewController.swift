@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @objc func buttonAction() {
         button.frame.origin.x = CGFloat(randomCoordinates().0)
         button.frame.origin.y = CGFloat(randomCoordinates().1)
+        button.backgroundColor = UIColor(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1)
     }
     
     func randomCoordinates() -> (Int, Int){
